@@ -1,2 +1,2 @@
-# Web3-Skill
-Learn a web3 skill on telegram with the help of Hyperbolic AI inferences 
+**Set up your Hyperbolic inference bot on telegram using this guide**: https://github.com/zunxbt/hyperbolic-bot.git
+Pick 
