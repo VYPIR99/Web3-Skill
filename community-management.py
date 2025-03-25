@@ -1,5 +1,6 @@
 import time
 import os
+import keyboard
 from dotenv import load_dotenv
 from telethon import TelegramClient
 
@@ -72,20 +73,48 @@ questions = [
 # Initialize the Telegram client
 client = TelegramClient("session_name", API_ID, API_HASH)
 
+# Pause flag
+paused = False
+
+def toggle_pause():
+    """Toggle pause state when 'P' or 'R' is pressed."""
+    global paused
+    paused = not paused
+    if paused:
+        print("\n⏸ PAUSED! Press 'R' to Resume.")
+    else:
+        print("\n▶️ RESUMED! Sending messages...")
+
+# Register keyboard shortcuts
+keyboard.add_hotkey("p", lambda: toggle_pause())  # Press 'P' to pause
+keyboard.add_hotkey("r", lambda: toggle_pause())  # Press 'R' to resume
+
 async def send_questions():
     await client.start(PHONE_NUMBER)  # Log in if not already logged in
 
     for index, question in enumerate(questions):
+        # Wait if paused
+        while paused:
+            time.sleep(1)
+
         await client.send_message(BOT_USERNAME, f"Q{index + 1}: {question}")
-        print(f"Sent Question {index + 1}: {question}")
+        print(f"✅ Sent Question {index + 1}: {question}")
 
         # Pause for 100 seconds after each question
         if index < len(questions) - 1:
             if (index + 1) % 10 == 0:
-                print("Pausing for 3 hours before sending the next batch of questions...")
-                time.sleep(3 * 60 * 60)  # 3-hour pause after every 10th question
+                print("\n⏳ Pausing for 3 hours before sending the next batch of questions...")
+                for _ in range(3 * 60 * 60):  # 3-hour pause with checks
+                    if paused:
+                        while paused:
+                            time.sleep(1)
+                    time.sleep(1)
             else:
-                time.sleep(100)  # Wait for 100 seconds before sending the next question
+                for _ in range(100):  # 100-second pause with checks
+                    if paused:
+                        while paused:
+                            time.sleep(1)
+                    time.sleep(1)
 
 # Run the script
 with client:
