@@ -13,13 +13,13 @@
 ```bash
 sudo apt install -y python3 python3-pip
 ```
-- **Install Telethon**
+- **Install required dependencies**
 ```bash
-pip install telethon
+pip install telethon python-dotenv keyboard
 ```
 
 - **Download any of the following script dependiing on the desired web3 skill**
-- **Socail Media and Community Management in web3**
+- **Socail Media and Community Management in Web3**
 ```bash
 curl -o community-management.py https://raw.githubusercontent.com/VYPIR99/Web3-Skill/main/community-management.py
 ```
@@ -36,3 +36,8 @@ PHONE_NUMBER=+1234567890
 BOT_USERNAME=@YourBotUsername
 ```
 - **Press Ctrl+X, then Y and Enter to exit and save**
+- **Run the downloaded script to kick start the bot**
+- **Social Media and Community Management in Web3**
+```bash
+python3 community-management.py
+```
