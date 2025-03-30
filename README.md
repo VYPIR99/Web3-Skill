@@ -38,12 +38,6 @@ sudo apt install -y python3 python3-pip
 pip install telethon python-dotenv keyboard
 ```
 
-- **Download any of the following script dependiing on the desired web3 skill**
-- **Social Media and Community Management in Web3**
-```bash
-curl -o community-management.py https://raw.githubusercontent.com/VYPIR99/Web3-Skill/main/community-management.py
-```
-
 - **Create .env file and inpute your credentials**
 ```bash 
 nano .env
@@ -62,6 +56,11 @@ BOT_USERNAME=@YourBotUsername
 - **Create a screen session**
 ```bash
 screen -S community-management
+```
+- **Download any of the following script dependiing on the desired web3 skill**
+- **Social Media and Community Management in Web3**
+```bash
+curl -o community-management.py https://raw.githubusercontent.com/VYPIR99/Web3-Skill/main/community-management.py
 ```
 - **START THE BOT**
 ```bash
