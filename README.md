@@ -1,4 +1,4 @@
-- This bot is meant to assist web3 ethusiast with or without any knowledge of coding or programming learn valuable skill(s) in web3 utilizing Hyperbolic AI Inferencing. 6 important areas have been identified:
+- This bot is meant to assist web3 ethusiast with or without any knowledge of coding or programming learn valuable skill(s) in web3 utilizing any of the inferencing models available on Hyperbolic AI. 6 important areas have been identified:
 1. Social Media and Community Management
 2. Content Creation and Writing,
 3. Web3 Community Education & Onboarding
