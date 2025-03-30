@@ -8,9 +8,9 @@
 
 - This bot automatically send a question from your telegram account to the hyperbolic telegram bot you created every 100 seconds. The hyperbolic inference model selected (DEEPSEEK V3 recommended) provides answers to these questions, typically in less than 20 seconds. There are 50 questions (10 questions in 5 sets) in total for each skill. The first set of questions are basic and introductory. Subsequent questions tends to be more technical, and help build and expand on the knowledge gained from prior question to ensure a favourable learning curve.
 
-- After each set of question (i.e 10 question), there will be an interval of 3 hours before the next set of question starts sending. This is to enable the learner research more on any aspect or answer that is not clear to him. The bot also can be paused, resumed, and restarted at anytime by the learner.
+- After each set of question (i.e 10 question), there will be an interval of 3 hours before the next set of question starts sending. This is to enable the learner, research and understand more on any aspect or answer that is not clear. The bot also can be paused, resumed, and restarted at anytime by the learner.
 
-- It is recommended to run this bot using the terminal on your local linux server as uploading your API ID to a VPS renders your telegram account vulnerable. However, you can also quickly create a new account or use any burner telegram account, you for security reasons.
+- It is recommended to run this bot using the terminal on your local linux server as uploading your API ID to a VPS renders your telegram account vulnerable. However, if you should prefer using a vps, it is suggested you create a new telegram account or use a burner telegram account that contains no sensitive info for security reasons.
 
 
 
