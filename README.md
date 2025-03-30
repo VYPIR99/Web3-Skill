@@ -27,7 +27,8 @@
 - **Give it a suitable short name**
 - **Enter the link to the telegram bot in the URL field then click on create application**
 - **Copy your API ID and API hash.. Keep it SAFE**
-
+- **Go to the hyperbolic bot you created on telegram, select "Text Models" then "DEEPSEEK V3"**
+- **ON YOUR SERVER**
 - **Install python3 and pip**
 ```bash
 sudo apt install -y python3 python3-pip
