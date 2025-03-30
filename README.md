@@ -72,7 +72,7 @@ python3 community-management.py
 - **After this, session details will be stored and you won’t need to log in again.**
 - **While in Screen, Press P to pause the bot, and R to resume.**
 
-- **Press Ctrl+A+D to minimize the screen**
+- **Press Ctrl+C to stop the bot or Ctrl+A+D to minimize the screen**
 
 - **Use this command to return to the screen**
 ```bash
